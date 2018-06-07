@@ -276,7 +276,7 @@ class Camera1 extends CameraViewImpl {
     private void chooseCamera() {
         for (int i = 0, count = Camera.getNumberOfCameras(); i < count; i++) {
             Camera.getCameraInfo(i, mCameraInfo);
-            if (mCameraInfo.facing == mFacing) {
+            if ( true || mCameraInfo.facing == mFacing) {
                 mCameraId = i;
                 return;
             }
